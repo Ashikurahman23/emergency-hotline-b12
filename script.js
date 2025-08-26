@@ -1,7 +1,5 @@
-//  Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
 const totalLove = document.getElementById('total-love');
 let loveCount = 0;
-
 document.querySelector('main').addEventListener('click', function (e) {
   if (e.target.className.includes('ri-heart-line')) {
     loveCount++;
@@ -9,17 +7,19 @@ document.querySelector('main').addEventListener('click', function (e) {
   }
 });
 
-/**
- * ### 5. Call Buttons
+const totalCopy = document.getElementById('total-copy');
+let copyCount = 0;
+document.querySelector('main').addEventListener('click', function (e) {
+  if (e.target.className.includes('copy-btn')) {
+    const serviceNumber =
+      e.target.parentNode.parentNode.children[1].children[2].innerText;
+    console.log(serviceNumber);
 
-- On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
-  - Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - Add this service into the **Call History section** with:
-    - Service name
-    - Service number
- */
+    alert(`Number Copied ${serviceNumber}`);
+    copyCount++;
+    totalCopy.innerText = copyCount;
+  }
+});
 
 const perCall = 20;
 document.querySelector('main').addEventListener('click', function (e) {
