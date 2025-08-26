@@ -84,7 +84,7 @@
                 class="ri-file-copy-line"></i>
               Copy</button>
             <button
-              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+              class="call-button w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
                 class="ri-phone-line"></i>
               Call</button>
           </div>
@@ -110,7 +110,7 @@
                 class="ri-file-copy-line"></i>
               Copy</button>
             <button
-              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+              class="call-button w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
                 class="ri-phone-line"></i>
               Call</button>
           </div>
@@ -136,7 +136,7 @@
                 class="ri-file-copy-line"></i>
               Copy</button>
             <button
-              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+              class="call-button w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
                 class="ri-phone-line"></i>
               Call</button>
           </div>
@@ -162,7 +162,7 @@
                 class="ri-file-copy-line"></i>
               Copy</button>
             <button
-              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+              class="call-button w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
                 class="ri-phone-line"></i>
               Call</button>
           </div>
@@ -188,7 +188,7 @@
                 class="ri-file-copy-line"></i>
               Copy</button>
             <button
-              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+              class="call-button w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
                 class="ri-phone-line"></i>
               Call</button>
           </div>
@@ -214,7 +214,7 @@
                 class="ri-file-copy-line"></i>
               Copy</button>
             <button
-              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+              class="call-button w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
                 class="ri-phone-line"></i>
               Call</button>
           </div>
@@ -239,7 +239,7 @@
                 class="ri-file-copy-line"></i>
               Copy</button>
             <button
-              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+              class="call-button w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
                 class="ri-phone-line"></i>
               Call</button>
           </div>
@@ -266,7 +266,7 @@
                 class="ri-file-copy-line"></i>
               Copy</button>
             <button
-              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+              class="call-button w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
                 class="ri-phone-line"></i>
               Call</button>
           </div>
@@ -292,7 +292,7 @@
                 class="ri-file-copy-line"></i>
               Copy</button>
             <button
-              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+              class="call-button w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
                 class="ri-phone-line"></i>
               Call</button>
           </div>
@@ -301,19 +301,16 @@
       </div>
     </section>
     <!-- Aside Section -->
-    <aside class="col-span-full lg:col-span-3 bg-white p-8 rounded-xl shadow">
+    <aside class="col-span-full lg:col-span-3 bg-white p-4 rounded-xl shadow">
       <div class="flex justify-between items-center">
         <p class="text-xl font-semibold"><i class="ri-history-line"></i> Call History</p>
-        <button class="btn bg-green-600 rounded-full text-white text-lg hover:bg-green-700">Clear</button>
+        <button id="clear-btn"
+          class="btn bg-green-600 rounded-full text-white text-lg hover:bg-green-700">Clear</button>
       </div>
 
       <!-- Result -->
-      <div class="flex justify-between items-center bg-neutral-100 gap-6 rounded-xl shadow p-6 mt-4">
-        <div class="">
-          <h4 class="text-xl font-bold">Name</h4>
-          <p class="text-neutral-600">Number</p>
-        </div>
-        <p>Time</p>
+      <div class="call-history">
+
       </div>
 
     </aside>
