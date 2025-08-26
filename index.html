@@ -10,9 +10,15 @@
   <!-- Tailwind & Daisy Ui -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+  <!-- Header Section -->
   <header class="w-full mx-auto">
     <!-- Navbar -->
     <nav class="flex flex-col md:flex-row gap-4 justify-between items-center bg-white p-6 md:px-14 md:py-6">
@@ -23,11 +29,11 @@
       </div>
       <!-- Right -->
       <div class="flex items-center gap-3 md:gap-6">
-        <div class="flex gap-2 items-center bg-green-100 px-4 md:px-6 py-2 rounded-full">
+        <div class="flex gap-2 items-center bg-green-50 px-4 md:px-6 py-2 rounded-full">
           <span id="total-love" class="font-bold text-lg">0</span>
           <img src="./assets/heart.png" alt="" class="w-7 block">
         </div>
-        <div class="flex gap-2 items-center bg-green-100 px-4 md:px-6 py-2 rounded-full">
+        <div class="flex gap-2 items-center bg-green-50 px-4 md:px-6 py-2 rounded-full">
           <span id="total-coin" class="font-bold text-lg">100</span>
           <img src="./assets/coin.png" alt="" class="w-7 block">
         </div>
@@ -41,17 +47,266 @@
   </header>
 
   <!-- Hero -->
-  <section class="w-full p-8"
+  <section class="w-full p-6 lg:py-8"
     style="background: linear-gradient(90deg,rgba(1, 50, 35, 1) 0%, rgba(0, 103, 71, 1) 50%, rgba(1, 50, 35, 1) 100%);">
-    <div class="w-[90%] text-center mx-auto flex flex-col gap-6 justify-center items-center text-white">
+    <div class="w-[90%] text-center mx-auto flex flex-col gap-4 justify-center items-center text-white">
       <img src="./assets/logo-dark.png" alt="Logo" class="w-24">
-      <h1 class="font-bold text-5xl">Emergency Service Directory</h1>
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold ">Emergency Service Directory</h1>
       <p class="font-semibold text-md md:text-xl mx-4">Government Emergency Services at Your Fingertip – A Project by
         Government of the
         People’s Republic of
         Bangladesh</p>
     </div>
   </section>
+
+  <!-- Main Section -->
+  <main class="w-full p-6 md:px-14 md:py-6 grid grid-cols-12 gap-8 bg-green-50">
+    <!-- Left Section -->
+    <section class="col-span-full lg:col-span-9 ">
+      <!-- Card Container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Cart 1 -->
+        <div class="bg-white p-8 rounded-xl shadow space-y-4">
+          <div class="flex justify-between items-center">
+            <div class="bg-red-100 p-3 rounded-2xl">
+              <img src="./assets/emergency.png" alt="" class="w-8">
+            </div>
+            <i class="fa-solid fa-heart text-xl cursor-pointer hover:text-red-600 transition"></i>
+          </div>
+          <div class="space-y-2 flex flex-col items-start">
+            <h4 class="text-2xl font-bold text-neutral-950">National Emergency Number</h4>
+            <p class="text-neutral-600 text-xl">National Emergency</p>
+            <h3 class="text-neutral-950 text-4xl font-bold">999</h3>
+            <p class="text-xl bg-neutral-100 px-4 py-2 rounded-full">All</p>
+          </div>
+          <div class="flex gap-6 justify-between">
+            <button
+              class="w-full cursor-pointer bg-white border-2 border-neutral-200 p-3 rounded-lg font-semibold text-neutral-600 hover:bg-neutral-200 transition"><i
+                class="fa-solid fa-copy"></i>
+              Copy</button>
+            <button
+              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+                class="fa-solid fa-phone"></i>
+              Call</button>
+          </div>
+        </div>
+
+        <!-- Cart 2 -->
+        <div class="bg-white p-8 rounded-xl shadow space-y-4">
+          <div class="flex justify-between items-center">
+            <div class="bg-red-100 p-3 rounded-2xl">
+              <img src="./assets/emergency.png" alt="" class="w-8">
+            </div>
+            <i class="fa-solid fa-heart text-xl cursor-pointer hover:text-red-600 transition"></i>
+          </div>
+          <div class="space-y-2 flex flex-col items-start">
+            <h4 class="text-2xl font-bold text-neutral-950">National Emergency Number</h4>
+            <p class="text-neutral-600 text-xl">National Emergency</p>
+            <h3 class="text-neutral-950 text-4xl font-bold">999</h3>
+            <p class="text-xl bg-neutral-100 px-4 py-2 rounded-full">All</p>
+          </div>
+          <div class="flex gap-6 justify-between">
+            <button
+              class="w-full cursor-pointer bg-white border-2 border-neutral-200 p-3 rounded-lg font-semibold text-neutral-600 hover:bg-neutral-200 transition"><i
+                class="fa-solid fa-copy"></i>
+              Copy</button>
+            <button
+              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+                class="fa-solid fa-phone"></i>
+              Call</button>
+          </div>
+        </div>
+
+        <!-- Cart 3 -->
+        <div class="bg-white p-8 rounded-xl shadow space-y-4">
+          <div class="flex justify-between items-center">
+            <div class="bg-red-100 p-3 rounded-2xl">
+              <img src="./assets/emergency.png" alt="" class="w-8">
+            </div>
+            <i class="fa-solid fa-heart text-xl cursor-pointer hover:text-red-600 transition"></i>
+          </div>
+          <div class="space-y-2 flex flex-col items-start">
+            <h4 class="text-2xl font-bold text-neutral-950">National Emergency Number</h4>
+            <p class="text-neutral-600 text-xl">National Emergency</p>
+            <h3 class="text-neutral-950 text-4xl font-bold">999</h3>
+            <p class="text-xl bg-neutral-100 px-4 py-2 rounded-full">All</p>
+          </div>
+          <div class="flex gap-6 justify-between">
+            <button
+              class="w-full cursor-pointer bg-white border-2 border-neutral-200 p-3 rounded-lg font-semibold text-neutral-600 hover:bg-neutral-200 transition"><i
+                class="fa-solid fa-copy"></i>
+              Copy</button>
+            <button
+              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+                class="fa-solid fa-phone"></i>
+              Call</button>
+          </div>
+        </div>
+
+        <!-- Cart 4 -->
+        <div class="bg-white p-8 rounded-xl shadow space-y-4">
+          <div class="flex justify-between items-center">
+            <div class="bg-red-100 p-3 rounded-2xl">
+              <img src="./assets/emergency.png" alt="" class="w-8">
+            </div>
+            <i class="fa-solid fa-heart text-xl cursor-pointer hover:text-red-600 transition"></i>
+          </div>
+          <div class="space-y-2 flex flex-col items-start">
+            <h4 class="text-2xl font-bold text-neutral-950">National Emergency Number</h4>
+            <p class="text-neutral-600 text-xl">National Emergency</p>
+            <h3 class="text-neutral-950 text-4xl font-bold">999</h3>
+            <p class="text-xl bg-neutral-100 px-4 py-2 rounded-full">All</p>
+          </div>
+          <div class="flex gap-6 justify-between">
+            <button
+              class="w-full cursor-pointer bg-white border-2 border-neutral-200 p-3 rounded-lg font-semibold text-neutral-600 hover:bg-neutral-200 transition"><i
+                class="fa-solid fa-copy"></i>
+              Copy</button>
+            <button
+              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+                class="fa-solid fa-phone"></i>
+              Call</button>
+          </div>
+        </div>
+
+        <!-- Cart 5 -->
+        <div class="bg-white p-8 rounded-xl shadow space-y-4">
+          <div class="flex justify-between items-center">
+            <div class="bg-red-100 p-3 rounded-2xl">
+              <img src="./assets/emergency.png" alt="" class="w-8">
+            </div>
+            <i class="fa-solid fa-heart text-xl cursor-pointer hover:text-red-600 transition"></i>
+          </div>
+          <div class="space-y-2 flex flex-col items-start">
+            <h4 class="text-2xl font-bold text-neutral-950">National Emergency Number</h4>
+            <p class="text-neutral-600 text-xl">National Emergency</p>
+            <h3 class="text-neutral-950 text-4xl font-bold">999</h3>
+            <p class="text-xl bg-neutral-100 px-4 py-2 rounded-full">All</p>
+          </div>
+          <div class="flex gap-6 justify-between">
+            <button
+              class="w-full cursor-pointer bg-white border-2 border-neutral-200 p-3 rounded-lg font-semibold text-neutral-600 hover:bg-neutral-200 transition"><i
+                class="fa-solid fa-copy"></i>
+              Copy</button>
+            <button
+              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+                class="fa-solid fa-phone"></i>
+              Call</button>
+          </div>
+        </div>
+
+        <!-- Cart 6 -->
+        <div class="bg-white p-8 rounded-xl shadow space-y-4">
+          <div class="flex justify-between items-center">
+            <div class="bg-red-100 p-3 rounded-2xl">
+              <img src="./assets/emergency.png" alt="" class="w-8">
+            </div>
+            <i class="fa-solid fa-heart text-xl cursor-pointer hover:text-red-600 transition"></i>
+          </div>
+          <div class="space-y-2 flex flex-col items-start">
+            <h4 class="text-2xl font-bold text-neutral-950">National Emergency Number</h4>
+            <p class="text-neutral-600 text-xl">National Emergency</p>
+            <h3 class="text-neutral-950 text-4xl font-bold">999</h3>
+            <p class="text-xl bg-neutral-100 px-4 py-2 rounded-full">All</p>
+          </div>
+          <div class="flex gap-6 justify-between">
+            <button
+              class="w-full cursor-pointer bg-white border-2 border-neutral-200 p-3 rounded-lg font-semibold text-neutral-600 hover:bg-neutral-200 transition"><i
+                class="fa-solid fa-copy"></i>
+              Copy</button>
+            <button
+              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+                class="fa-solid fa-phone"></i>
+              Call</button>
+          </div>
+        </div>
+        <!-- Cart 7 -->
+        <div class="bg-white p-8 rounded-xl shadow space-y-4">
+          <div class="flex justify-between items-center">
+            <div class="bg-red-100 p-3 rounded-2xl">
+              <img src="./assets/emergency.png" alt="" class="w-8">
+            </div>
+            <i class="fa-solid fa-heart text-xl cursor-pointer hover:text-red-600 transition"></i>
+          </div>
+          <div class="space-y-2 flex flex-col items-start">
+            <h4 class="text-2xl font-bold text-neutral-950">National Emergency Number</h4>
+            <p class="text-neutral-600 text-xl">National Emergency</p>
+            <h3 class="text-neutral-950 text-4xl font-bold">999</h3>
+            <p class="text-xl bg-neutral-100 px-4 py-2 rounded-full">All</p>
+          </div>
+          <div class="flex gap-6 justify-between">
+            <button
+              class="w-full cursor-pointer bg-white border-2 border-neutral-200 p-3 rounded-lg font-semibold text-neutral-600 hover:bg-neutral-200 transition"><i
+                class="fa-solid fa-copy"></i>
+              Copy</button>
+            <button
+              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+                class="fa-solid fa-phone"></i>
+              Call</button>
+          </div>
+        </div>
+
+
+        <!-- Cart 8 -->
+        <div class="bg-white p-8 rounded-xl shadow space-y-4">
+          <div class="flex justify-between items-center">
+            <div class="bg-red-100 p-3 rounded-2xl">
+              <img src="./assets/emergency.png" alt="" class="w-8">
+            </div>
+            <i class="fa-solid fa-heart text-xl cursor-pointer hover:text-red-600 transition"></i>
+          </div>
+          <div class="space-y-2 flex flex-col items-start">
+            <h4 class="text-2xl font-bold text-neutral-950">National Emergency Number</h4>
+            <p class="text-neutral-600 text-xl">National Emergency</p>
+            <h3 class="text-neutral-950 text-4xl font-bold">999</h3>
+            <p class="text-xl bg-neutral-100 px-4 py-2 rounded-full">All</p>
+          </div>
+          <div class="flex gap-6 justify-between">
+            <button
+              class="w-full cursor-pointer bg-white border-2 border-neutral-200 p-3 rounded-lg font-semibold text-neutral-600 hover:bg-neutral-200 transition"><i
+                class="fa-solid fa-copy"></i>
+              Copy</button>
+            <button
+              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+                class="fa-solid fa-phone"></i>
+              Call</button>
+          </div>
+        </div>
+
+        <!-- Cart 9 -->
+        <div class="bg-white p-8 rounded-xl shadow space-y-4">
+          <div class="flex justify-between items-center">
+            <div class="bg-red-100 p-3 rounded-2xl">
+              <img src="./assets/emergency.png" alt="" class="w-8">
+            </div>
+            <i class="fa-solid fa-heart text-xl cursor-pointer hover:text-red-600 transition"></i>
+          </div>
+          <div class="space-y-2 flex flex-col items-start">
+            <h4 class="text-2xl font-bold text-neutral-950">National Emergency Number</h4>
+            <p class="text-neutral-600 text-xl">National Emergency</p>
+            <h3 class="text-neutral-950 text-4xl font-bold">999</h3>
+            <p class="text-xl bg-neutral-100 px-4 py-2 rounded-full">All</p>
+          </div>
+          <div class="flex gap-6 justify-between">
+            <button
+              class="w-full cursor-pointer bg-white border-2 border-neutral-200 p-3 rounded-lg font-semibold text-neutral-600 hover:bg-neutral-200 transition"><i
+                class="fa-solid fa-copy"></i>
+              Copy</button>
+            <button
+              class="w-full cursor-pointer bg-green-600 border-1 border-green-600 p-3 rounded-lg text-white font-semibold hover:bg-green-700 transition"><i
+                class="fa-solid fa-phone"></i>
+              Call</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Aside Section -->
+    <aside class="col-span-full lg:col-span-3 bg-green-900">
+      fgsfsfs
+    </aside>
+  </main>
 </body>
 
 </html>
