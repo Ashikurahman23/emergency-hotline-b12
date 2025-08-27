@@ -13,9 +13,9 @@ document.querySelector('main').addEventListener('click', function (e) {
   if (e.target.className.includes('copy-btn')) {
     const serviceNumber =
       e.target.parentNode.parentNode.children[1].children[2].innerText;
-    console.log(serviceNumber);
 
     alert(`Number Copied ${serviceNumber}`);
+    navigator.clipboard.writeText(serviceNumber);
     copyCount++;
     totalCopy.innerText = copyCount;
   }
